@@ -1,0 +1,5 @@
+<div class="container">
+  <% @employees.each do |employee| %>
+    <%= link_to employee.name, employee_path(employee), class: "text-center" %>
+  <% end %>
+</div>

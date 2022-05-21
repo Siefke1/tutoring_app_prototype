@@ -1,0 +1,7 @@
+<div class="container">
+  <%= simple_form_for @employee do |f| %>
+    <%= f.label :name, class: 'form-label mt-5' %>
+    <%= f.input :name, label: false, input_html: { class: 'form-control mb-2' } %>
+    <%= f.button :submit, "Create User", class: "btn btn-danger" %>
+  <% end %>
+</div>

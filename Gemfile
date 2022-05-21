@@ -73,3 +73,4 @@ end
 
 # Custom gems
 gem "bootstrap"
+gem "simple_form", github: "heartcombo/simple_form"
