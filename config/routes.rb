@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   # Employees controller routes
-  resources :employees, only: [:index, :show, :new, :create]
+  resources :employees, only: [:index, :show, :new, :create] do
+    resources :skillsets, only: :create
+  end
 
 end
