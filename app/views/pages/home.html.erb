@@ -1,4 +1,5 @@
-
-<% if params[:query].present? %>
-  <div class="div">You were looking for <%= params[:query] %>?</div>
-<% end %>
+<div class="container home-page-container">
+  <% if params[:query].present? %>
+    <div class="div text-center mt-5">You were looking for "<%= params[:query] %>"?</div>
+  <% end %>
+</div>
